@@ -10,7 +10,7 @@ Extract the theme into src/Powercord/Themes *see screenshot:*
 
 ![](https://media.discordapp.net/attachments/695592374021390376/713752904971845642/unknown.png)
 
-There are some css add-ons from monstrousdev, if you want to remove them, simply delete the following `@import`s in
+There are some css add-ons from monstrousdev, if you want to remove them, simply modify the following `@import`s in
 the DiscordTweaks.css file:
 
 ```css

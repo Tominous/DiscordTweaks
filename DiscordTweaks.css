@@ -1,3 +1,11 @@
+/**
+ * @name DiscordTweaks
+ * @version 0.9.3
+ * @description Tweaks little UI problems and fixes alot of problems with discord's css.
+ * 
+ * @website https://github.com/cal3432/DiscordTweaks
+ */
+
 @import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/minTweaks/channels.css';
 @import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/minTweaks/login.css';
 @import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/minTweaks/message.css';
@@ -5,9 +13,15 @@
 @import "https://monstrousdev.github.io/themes/addons/iconTabs.css";
 @import "https://monstrousdev.github.io/themes/addons/iconTabs-disabledGames.css";
 @import "https://monstrousdev.github.io/themes/addons/userSettingsModal.css";
+
+/**
+Disabled because most people dont like it, remove this comment to enable it.
 @import "https://monstrousdev.github.io/themes/addons/minimalUserList.css";
+**/
+
 @import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/DiscordFont.css);
 
+/** Replace discord logo with a bolder and smoother variant **/
 .wordmark-2iDDfm:after {
     content: "DISCORD";
     color: #E0E0E0 !important;
@@ -24,11 +38,12 @@
     width: 0px;
 }
 
-.powercord-badge {
-    display: none;
-}
-
 :root {
     --messageGiftButtonHide: none;
     --messageHelpButtonHide: none;
+}
+
+/** Powercord Only **/
+.powercord-badge {
+    display: none;
 }
