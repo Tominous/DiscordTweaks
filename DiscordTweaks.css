@@ -2,7 +2,7 @@
  * @name DiscordTweaks
  * @version 0.9.3
  * @description Tweaks little UI problems and fixes alot of problems with discord's css.
- * 
+ * @author CyaCal (cal3432)
  * @website https://github.com/cal3432/DiscordTweaks
  */
 
@@ -10,14 +10,6 @@
 @import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/minTweaks/login.css';
 @import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/minTweaks/message.css';
 @import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/minTweaks/user.css';
-@import "https://monstrousdev.github.io/themes/addons/iconTabs.css";
-@import "https://monstrousdev.github.io/themes/addons/iconTabs-disabledGames.css";
-@import "https://monstrousdev.github.io/themes/addons/userSettingsModal.css";
-
-/**
-Disabled because most people dont like it, remove this comment to enable it.
-@import "https://monstrousdev.github.io/themes/addons/minimalUserList.css";
-**/
 
 @import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/DiscordFont.css);
 
