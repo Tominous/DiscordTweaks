@@ -1,6 +1,7 @@
 @import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/minTweaks/channels.css';
-@import './minTweaks/message.css';
-@import './nitroPage.css';
+@import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/minTweaks/login.css';
+@import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/minTweaks/message.css';
+@import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/minTweaks/user.css';
 @import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/DiscordFont.css);
 
 .wordmark-2iDDfm:after {
