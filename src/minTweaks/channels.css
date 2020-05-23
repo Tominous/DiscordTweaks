@@ -64,14 +64,15 @@
     border-color: var(--background-tertiary);
 }
 
-@import "https://monstrousdev.github.io/themes/addons/iconTabs.css";
-@import "https://monstrousdev.github.io/themes/addons/iconTabs-disabledGames.css";
-@import "https://monstrousdev.github.io/themes/addons/userSettingsModal.css";
-@import "https://monstrousdev.github.io/themes/addons/minimalUserList.css";
+.toolbar-1t6TWx>div:first-child,
+.toolbar-1t6TWx>div:nth-child(3) {
+    display: none;
+}
 
 .pc-scroller [class|=container] {
     position: relative;
 }
+
 .pc-scroller [class|=container]:not([class|=container-0])::after {
     content: "";
     position: absolute;
@@ -82,11 +83,13 @@
     right: 0px;
     z-index: -1;
 }
+
 .pc-scroller [class|=container] .pc-containerDefault:first-child {
     display: flex;
     align-items: center;
 }
-.pc-scroller [class|=container] .pc-containerDefault:first-child > * {
+
+.pc-scroller [class|=container] .pc-containerDefault:first-child>* {
     background: #2f3136;
     margin: 0 auto;
 }
@@ -112,8 +115,9 @@
 .upperBadge-2XnnGB {
     display: none;
 }
+
 rect[x="28"][y="-4"][width="24"][height="24"][rx="12"][ry="12"][transform="translate(0 0)"][fill="black"] {
-  display: none;
+    display: none;
 }
 
 .menu-Sp6bN1 {
@@ -128,7 +132,10 @@ rect[x="28"][y="-4"][width="24"][height="24"][rx="12"][ry="12"][transform="trans
     bottom: 53px !important;
 }
 
-.menu-Sp6bN1 .separator-2zcjq8/*, .statusItem-2uzPIV .helper-2c73HK*/ {
+.menu-Sp6bN1 .separator-2zcjq8
+
+/*, .statusItem-2uzPIV .helper-2c73HK*/
+    {
     display: none;
 }
 
@@ -147,6 +154,7 @@ rect[x="28"][y="-4"][width="24"][height="24"][rx="12"][ry="12"][transform="trans
 .dividerRed-MKoLlr .dividerContent-2L12VI {
     color: #f04747;
 }
+
 a.pc-anchor[href="https://support.discordapp.com"] {
     display: none
 }

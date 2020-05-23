@@ -66,3 +66,11 @@
     background: var(--deprecated-text-input-border-hover);
     border-color: var(--background-secondary);
 }
+.userInfoViewing-16kqK3 .flex-1xMQg5 .flexChild-faoVW3 .marginBottom20-32qID7 + div .selectable-2GY4I1 {
+    filter: blur(5px);
+    transition: filter .5s;
+}
+
+.userInfoViewing-16kqK3 .flex-1xMQg5 .flexChild-faoVW3 .marginBottom20-32qID7 + div .selectable-2GY4I1:hover{
+    filter: blur(0);
+}
