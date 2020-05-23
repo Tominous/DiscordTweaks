@@ -6,11 +6,17 @@ Versions 0.8.x and below have been deleted (by accident, they were on my old com
 ## Installation:
 
 Download the latest version from the releases tab, using the code raw from github wont work!
-Extract the theme into src/Powercord/Themes *see screenshot:*
+
+#### Powercord Install:
+Extract the theme into src/Powercord/Themes for powercord:*see screenshot:*
 
 ![](https://media.discordapp.net/attachments/695592374021390376/713752904971845642/unknown.png)
 
-There are some css add-ons from monstrousdev, if you want to remove them, simply modify the following `@import`s in
+#### BetterDiscord Install:
+Extract the theme into the themes folder.
+
+## Enabling/Disabling features.
+There are some css add-ons from monstrousdev, if you want to disable/enable them, simply modify the following `@import`s in
 the DiscordTweaks.css file:
 
 ```css
@@ -20,11 +26,12 @@ the DiscordTweaks.css file:
 @import "https://monstrousdev.github.io/themes/addons/minimalUserList.css";
 ```
 
-To un-hide the gift button and the help button, remove the following from `:root` in the DiscordTweaks.css file:
+To un-hide the "gift nitro" button next to the emoji picker and gif button, and the help button, modify the following from `:root` in the DiscordTweaks.css file:
 
 ```css
-    --messageGiftButtonHide: none;
-    --messageHelpButtonHide: none;
+    OLD: --messageGiftButtonHide: none;
+    NEW: --messageGiftButtonHide;
+    SAME FOR HELP BUTTON
 ```
 
 ## Using and contributing to:
