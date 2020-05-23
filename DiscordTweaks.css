@@ -1,1 +1,34 @@
-@import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/main.css';
+@import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/minTweaks/channels.css';
+@import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/minTweaks/login.css';
+@import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/minTweaks/message.css';
+@import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/minTweaks/user.css';
+@import "https://monstrousdev.github.io/themes/addons/iconTabs.css";
+@import "https://monstrousdev.github.io/themes/addons/iconTabs-disabledGames.css";
+@import "https://monstrousdev.github.io/themes/addons/userSettingsModal.css";
+@import "https://monstrousdev.github.io/themes/addons/minimalUserList.css";
+@import url(https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/DiscordFont.css);
+
+.wordmark-2iDDfm:after {
+    content: "DISCORD";
+    color: #E0E0E0 !important;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    width: 4000px;
+    top: 5px;
+    padding-left: -3px;
+    font-family: "Discord";
+}
+
+.wordmark-2iDDfm>svg {
+    width: 0px;
+}
+
+.powercord-badge {
+    display: none;
+}
+
+:root {
+    --messageGiftButtonHide: none;
+    --messageHelpButtonHide: none;
+}
