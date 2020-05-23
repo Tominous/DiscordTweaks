@@ -1,6 +1,7 @@
 # DiscordTweaks
-A bunch of tweaks for the PowerCord Client
+Tweaks little UI problems and adds lots of little features that make life easier.
 
+Versions 0.8.x and below have been deleted (by accident, they were on my old computer.)
 
 ## Installation:
 
@@ -17,6 +18,13 @@ the DiscordTweaks.css file:
 @import "https://monstrousdev.github.io/themes/addons/iconTabs-disabledGames.css";
 @import "https://monstrousdev.github.io/themes/addons/userSettingsModal.css";
 @import "https://monstrousdev.github.io/themes/addons/minimalUserList.css";
+```
+
+To un-hide the gift button and the help button, remove the following from `:root` in the DiscordTweaks.css file:
+
+```css
+    --messageGiftButtonHide: none;
+    --messageHelpButtonHide: none;
 ```
 
 ## Using and contributing to:
