@@ -1,0 +1,8 @@
+{
+    "name": "DiscordTweaks",
+    "version": "0.1.0",
+    "author": "CyaCal",
+    "license": "CC BY-NC-SA",
+    "theme": "./src/main.css",
+    "description": "Tweaks little UI problems and fixes alot of problems with discord's css."
+}
