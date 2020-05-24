@@ -22,6 +22,7 @@ Download the latest version from the releases tab, using the code raw from githu
 
 #### Powercord Install:
 Extract the theme into src/Powercord/Themes for powercord:*see screenshot:*
+#### *THEMER IS REQUIRED: DOWNLOAD HERE:* https://github.com/LandenStephenss/Themer/releases
 
 ![](https://media.discordapp.net/attachments/695592374021390376/713752904971845642/unknown.png)
 
