@@ -438,6 +438,9 @@ img[src="https://cdn.discordapp.com/icons/713860553885483081/f9ca481e85be0cf34f4
     background-image: url('https://gistcdn.githack.com/Dries1234/1b10daaeeba58acac90bbf4d7a3dc1ad/raw/7e8acdbc2a9c6e17d2076d01781022238cbe49e9/gaming.svg') !important;
     background-size: cover;
 }
+.icon-WnO6o2 {
+    display: none;
+}
 
 /** Fix guild banner **/
 
