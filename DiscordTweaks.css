@@ -7,19 +7,563 @@
  * @website https://github.com/cal3432/DiscordTweaks
  */
 
- @import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/channels.css';
- @import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/DTRB.css';
- @import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/guildMemberList.css';
- @import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/invites.css';
- @import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/login.css';
- @import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/message.css';
- @import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/settings.css';
- @import 'https://github.com/cal3432/DiscordTweaks/blob/master/src/user.css';
-
-
-:root {
-    --messageGiftButtonHide: none;
-    --messageHelpButtonHide: none;
+ .overlayTitle-8IcS01.idle-U-LIlZ {
+    /** Keep usernames over when lose focus **/
+    opacity: 1 !important
 }
+
+/** Scrollable Roles, thanks to @Nevulo#9909 **/
+.rolesList-22qj2L {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 175px;
+}
+
+.rolesList-22qj2L::-webkit-scrollbar {
+    width: 5px;
+    height: 14px;
+}
+
+.rolesList-22qj2L::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 7px;
+    border-color: #202225;
+}
+
+.rolesList-22qj2L::-webkit-scrollbar-track-piece {
+    background-color: #2f3136;
+    border: 3px solid #36393f;
+    border-radius: 7px;
+}
+
+
+.connectedAccountIcon-3P3V6F {
+    /** Stop icon drag **/
+    -webkit-user-drag: none;
+}
+
+.customStatus-1bh2V9 {
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.customStatus-1bh2V9::-webkit-scrollbar {
+    background-color: var(--background-modifier-accent) !important;
+    width: 6px;
+    border-radius: 30px;
+}
+
+.customStatus-1bh2V9::-webkit-scrollbar-button {
+    display: none;
+}
+
+.customStatus-1bh2V9::-webkit-scrollbar-thumb {
+    background: var(--background-modifier-accent);
+    height: 50px;
+    border-radius: 30px;
+    border-top: 2px solid var(--background-secondary);
+    border-bottom: 2px solid var(--background-secondary);
+}
+
+.theme-dark .customStatus-1bh2V9::-webkit-scrollbar {
+    background-color: var(--background-floating) !important;
+}
+
+.theme-dark .customStatus-1bh2V9::-webkit-scrollbar-thumb {
+    background: var(--deprecated-text-input-border-hover);
+    border-color: var(--background-secondary);
+}
+.userInfoViewing-16kqK3 .flex-1xMQg5 .flexChild-faoVW3 .marginBottom20-32qID7 + div .selectable-2GY4I1 {
+    filter: blur(5px);
+    transition: filter .5s;
+}
+
+.userInfoViewing-16kqK3 .flex-1xMQg5 .flexChild-faoVW3 .marginBottom20-32qID7 + div .selectable-2GY4I1:hover{
+    filter: blur(0);
+}
+/** SETTINGS AREA **/
+.side-8zPYf6 .header-2RyJ0Y:first-child {
+    text-align: center;
+}
+
+.title-3sZWYQ[class="colorStandard-2KCXvj size14-e6ZScH h5-18_1nd title-3sZWYQ marginBottom4-2qk4Hy"] {
+    text-align: center;
+}
+
+.title-3sZWYQ[class="colorStandard-2KCXvj size14-e6ZScH h5-18_1nd title-3sZWYQ marginBottom4-2qk4Hy faded-3bns_w"] {
+    text-align: center;
+}
+
+.side-8zPYf6 .item-PXvHYJ {
+    padding-top: 5px;
+}
+
+.header-2RyJ0Y {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css);
+
+code,
+.codeLine-14BKbG {
+    font-family: 'Fira Code', monospace;
+}
+
+.cm-qualifier,
+.cm-property,
+.cm-string,
+.cm-atom,
+.cm-def {
+    font-family: 'Fira Code', monospace;
+    font-size: 10px
+}
+
+.topPill-30KHOu {
+    text-align: center;
+    padding-left: 14rem;
+}
+
+.separator-gCa7yv {
+    height: 20px;
+}
+/** MESSAGES AND CHANNELS **/
+.button-F9qN4n.focused-3ZzkKr {
+    /** Thanks to @sadlennysub#6727 for this! Hover Reaction Fix**/
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.edited-3sfAzf {
+    /** Change Edited text to transparent and hide it **/
+    color: rgba(0, 0, 0, 0);
+}
+
+.edited-3sfAzf::before {
+    /** Replace "(Edited)" with a pencil customise this to your will...**/
+    content: "✏ ";
+    margin-left: .3em;
+    font-size: 0.625rem;
+    cursor: pointer;
+    line-height: 1;
+    user-select: none;
+    color: var(--text-muted);
+}
+
+.noIcon-1a_FrS.iconSizeLarge-161qtT {
+    /** Fix zalgo and arabic/non lettered guild names overflowing down the chat, ruining the channel.**/
+    overflow: hidden;
+}
+
+.toolbar-1t6TWx a {
+    display: none;
+}
+
+.buttonWrapper-1ZmCpA {
+    display: none;
+}
+
+/** Fix jump to present button**/
+.jumpToPresentBar-9P20AM {
+    display: grid !important;
+    background-color: #0000 !important;
+    justify-content: right;
+    min-height: 0 !important;
+    height: 0;
+    padding: 0 !important;
+    opacity: 1 !important;
+}
+
+.jumpToPresentBar-9P20AM .barButtonAlt-3gIkIj {
+    color: #0000;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px !important;
+    background-color: var(--background-tertiary) !important;
+    transform: translate(-5px, -52px);
+    cursor: pointer;
+}
+
+.jumpToPresentBar-9P20AM .barButtonAlt-3gIkIj::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    width: 55%;
+    height: 55%;
+    background-image: url(https://image.flaticon.com/icons/svg/271/271210.svg);
+}
+
+.theme-dark .jumpToPresentBar-9P20AM .barButtonAlt-3gIkIj::before {
+    filter: invert(60%);
+}
+
+.theme-light .jumpToPresentBar-9P20AM .barButtonAlt-3gIkIj::before {
+    filter: invert(40%);
+}
+
+.scrollableContainer-2NUZem {
+    border-radius: 20px;
+    background-color: rgba(64, 68, 75, 0.75);
+}
+
+.jumpToPresentBar-9P20AM *:not(.barButtonAlt-3gIkIj) {
+    display: none !important;
+}
+
+.markup-2BOw-j {
+    font-size: normal + 2px;
+    font-weight: 1;
+    line-height: normal + 1rem;
+}
+
+.container-1ov-mD>*,
+.imageWrapper-2p5ogY img {
+    border-radius: 8px;
+}
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: .5em;
+    color: #abb2bf;
+    background: #282c34
+}
+
+.hljs-comment,
+.hljs-quote {
+    color: #5c6370;
+    font-style: italic
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+    color: #c678dd
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+    color: #e06c75
+}
+
+.hljs-literal {
+    color: #56b6c2
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string {
+    color: #98c379
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title {
+    color: #e6c07b
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+    color: #d19a66
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+    color: #61aeee
+}
+
+.hljs-emphasis {
+    font-style: italic
+}
+
+.hljs-strong {
+    font-weight: bold
+}
+
+.hljs-link {
+    text-decoration: underline
+}
+/** LOGIN AREA **/
+.verticalSeperator-3huAjp {
+    /**Login Panel Vertical Seperator Length Fix**/
+    padding-bottom: 12rem;
+}
+.h5-18_1nd {
+    /** Login Panel Email/Password Text Center **/
+    text-align: center;
+}
+[class="marginBottom20-32qID7 marginTop4-2BNfKC linkButton-wzh5kV button-38aScr lookLink-9FtZy- colorBrand-3pXr91 sizeMin-1mJd1x grow-q77ONN"] {
+    /** Login Panel ForgotPassword Text Center **/
+    padding-left: 8.75rem;
+    text-align: center;
+}
+/** INVITES **/
+.lookOutlined-3sRXeN.colorGreen-29iAKY {
+    color: #43b581;
+    border-color: rgba(0, 0, 0, 0)
+}
+.title-3sZWYQ[class="colorStandard-2KCXvj size14-e6ZScH h5-18_1nd title-3sZWYQ marginBottom8-AtZOdT"] {
+    text-align: center;
+}
+.title-3sZWYQ[class="colorStandard-2KCXvj size14-e6ZScH h5-18_1nd title-3sZWYQ defaultMarginh5-2mL-bP"] {
+    text-align: center;
+}
+/** MEMBER LIST **/
+.membersGroup-v9BXpm {
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 1.2rem
+}
+.layout-2DM8Md {
+    text-align: center;
+}
+/** CUSTOM STUFF **/
+/** Make discord Tweaks server title rainbow **/
+@import 'https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/DiscordFont.css';
+
+.header-2o-2hj[data-guild-id="713860553885483081"] {
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    text-align: center;
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    animation: rainbow 8s ease infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 25%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+img[src="https://cdn.discordapp.com/icons/713860553885483081/f9ca481e85be0cf34f458a602bcc96c9.webp?size=128"] {
+    animation: w3-spin 2s infinite linear;
+    border-radius: 50%;
+}
+@keyframes w3-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+
+
+/** Replace discord logo with a bolder and smoother variant **/
+.wordmark-2iDDfm:after {
+    content: "DISCORD";
+    color: #E0E0E0 !important;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    width: 4000px;
+    top: 5px;
+    padding-left: -3px;
+    font-family: "Discord";
+}
+
+.wordmark-2iDDfm>svg {
+    width: 0px;
+}
+
+/** Remove powercord badge **/
+.powercord-badge {
+    display: none;
+}
+/** CHANNELS**/
+#private-channels [href="/store"] {
+    /** Remove annoying nitro tab below the friends button. **/
+    display: none;
+}
+
+.image-1GzsFd[style*='background-image: url("/assets/b5eb2f7d6b3f8cc9b60be4a5dcf28015.svg")'] {
+    background-image: url('https://gistcdn.githack.com/Dries1234/1b10daaeeba58acac90bbf4d7a3dc1ad/raw/7e8acdbc2a9c6e17d2076d01781022238cbe49e9/All-Friends.svg') !important;
+    background-size: cover;
+}
+
+/* Pending */
+.image-1GzsFd[style*='background-image: url("/assets/b669713872b43ca42333264abf9c858e.svg")'] {
+    background-image: url('https://gistcdn.githack.com/Dries1234/1b10daaeeba58acac90bbf4d7a3dc1ad/raw/7e8acdbc2a9c6e17d2076d01781022238cbe49e9/pending.svg') !important;
+    background-size: cover;
+}
+
+
+/* Blocked */
+.image-1GzsFd[style*='background-image: url("/assets/8c998f8fb62016fcfb4901e424ff378b.svg")'] {
+    background-image: url('https://gistcdn.githack.com/Dries1234/1b10daaeeba58acac90bbf4d7a3dc1ad/raw/7e8acdbc2a9c6e17d2076d01781022238cbe49e9/Blocked.svg') !important;
+    background-size: cover;
+}
+
+/* LIBRARY TAB */
+.theme-dark .emptyWumpus-12J3jI {
+    background-image: url('https://gistcdn.githack.com/Dries1234/1b10daaeeba58acac90bbf4d7a3dc1ad/raw/7e8acdbc2a9c6e17d2076d01781022238cbe49e9/gaming.svg') !important;
+    background-size: cover;
+}
+
+.theme-dark .emptyStateImage-2eMp68 {
+    background-image: url('https://gistcdn.githack.com/Dries1234/1b10daaeeba58acac90bbf4d7a3dc1ad/raw/7e8acdbc2a9c6e17d2076d01781022238cbe49e9/gaming.svg') !important;
+    background-size: cover;
+}
+
+.theme-light .emptyWumpus-12J3jI {
+    background-image: url('https://gistcdn.githack.com/Dries1234/1b10daaeeba58acac90bbf4d7a3dc1ad/raw/7e8acdbc2a9c6e17d2076d01781022238cbe49e9/gaming.svg') !important;
+    background-size: cover;
+}
+
+.theme-light .emptyStateImage-2eMp68 {
+    background-image: url('https://gistcdn.githack.com/Dries1234/1b10daaeeba58acac90bbf4d7a3dc1ad/raw/7e8acdbc2a9c6e17d2076d01781022238cbe49e9/gaming.svg') !important;
+    background-size: cover;
+}
+
+/** Fix guild banner **/
+
+.bannerImage-1jOskm:before {
+    background: linear-gradient(0deg, var(--background-secondary) 3%, transparent 66%, rgba(0, 0, 0, 0.5) 100%);
+    height: 100%;
+}
+
+.animatedContainer-1pJv5C {
+    box-shadow: none !important;
+}
+
+/** Fix region selector **/
+
+.layer-2KE1M9 .focusLock-Ns3yie .regionSelectModal-12e-57 {
+    background: var(--background-primary) !important;
+}
+
+.layer-2KE1M9 .focusLock-Ns3yie .regionSelectModal-12e-57 .regionSelectModalOptions-2TWQOB .regionSelectModalOption-2DSIZ3 {
+    background: var(--background-secondary) !important;
+    border-color: var(--background-tertiary);
+}
+
+.toolbar-1t6TWx>div:first-child,
+.toolbar-1t6TWx>div:nth-child(3) {
+    display: none;
+}
+
+.pc-scroller [class|=container] {
+    position: relative;
+}
+
+.pc-scroller [class|=container]:not([class|=container-0])::after {
+    content: "";
+    position: absolute;
+    top: 28px;
+    background: #55595f;
+    height: 1.1px;
+    left: 6px;
+    right: 0px;
+    z-index: -1;
+}
+
+.pc-scroller [class|=container] .pc-containerDefault:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.pc-scroller [class|=container] .pc-containerDefault:first-child>* {
+    background: #2f3136;
+    margin: 0 auto;
+}
+
+.numberBadge-2s8kKX {
+    animation: animatedPing 1.5s infinite ease-in-out;
+}
+
+@keyframes animatedPing {
+    0% {
+        transform: rotate(-15deg);
+    }
+
+    50% {
+        transform: rotate(15deg) scale(1.2);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+.upperBadge-2XnnGB {
+    display: none;
+}
+
+rect[x="28"][y="-4"][width="24"][height="24"][rx="12"][ry="12"][transform="translate(0 0)"][fill="black"] {
+    display: none;
+}
+
+.menu-Sp6bN1 {
+    border-radius: 0px;
+    width: 240px;
+    background-color: var(--deprecated-panel-background);
+    box-shadow: none;
+}
+
+.layer-v9HyYc[style="left: 80px; bottom: 57px;"] {
+    left: 72px !important;
+    bottom: 53px !important;
+}
+
+.menu-Sp6bN1 .separator-2zcjq8,
+.statusItem-2uzPIV .helper-2c73HK {
+    display: none;
+}
+
+.dividerContent-2L12VI::before {
+    display: none;
+}
+
+.dividerContent-2L12VI {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 8px 0;
+    color: var(--header-primary);
+}
+
+.dividerRed-MKoLlr .dividerContent-2L12VI {
+    color: #f04747;
+}
+
+a.pc-anchor[href="https://support.discordapp.com"] {
+    display: none
+}
+.icon-WnO6o2 {
+    padding-left: 2rem;
+}
+
+.containerDefault-3GGEv_ {
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 4px;
+}
+
+
+
 
 
