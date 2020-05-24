@@ -3,7 +3,9 @@ Tweaks little UI problems and adds lots of little features that make life easier
 
 Versions 0.8.x and below have been deleted (by accident, they were on my old computer.)
 
-[Join the support discord! ![](https://4.bp.blogspot.com/-NFqBFAfKkOY/WloTtst5ylI/AAAAAAAADPU/lI0D3TTnzkUpkwnrytecLap-xYCUzLm8ACK4BGAYYCw/s1600/Discord-Logo.gif)]( https://discord.gg/JHrWGtb)
+![](https://4.bp.blogspot.com/-NFqBFAfKkOY/WloTtst5ylI/AAAAAAAADPU/lI0D3TTnzkUpkwnrytecLap-xYCUzLm8ACK4BGAYYCw/s1600/Discord-Logo.gif) 
+
+[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Join the support discord! ]( https://discord.gg/JHrWGtb)
 
 ***The following themes do not work alongside DiscordTweaks:***
 ------------------------------------------------------------
@@ -22,23 +24,6 @@ Download the latest version from the releases tab, using the code raw from githu
 Extract the theme into src/Powercord/Themes for powercord:*see screenshot:*
 
 ![](https://media.discordapp.net/attachments/695592374021390376/713752904971845642/unknown.png)
-
-<<<<<<< HEAD
-=======
-#### BetterDiscord Install:
-Extract the theme into the themes folder.
-
-## Enabling/Disabling features.
-There are some css add-ons from monstrousdev, if you want to disable/enable them, simply modify the following `@import`s in
-the DiscordTweaks.css file:
-
-```css
-@import "https://monstrousdev.github.io/themes/addons/iconTabs.css";
-@import "https://monstrousdev.github.io/themes/addons/iconTabs-disabledGames.css";
-@import "https://monstrousdev.github.io/themes/addons/userSettingsModal.css";
-@import "https://monstrousdev.github.io/themes/addons/minimalUserList.css";
-```
->>>>>>> 25f3615067b6165df6c2d36df67900b6bced1213
 
 To un-hide the "gift nitro" button next to the emoji picker and gif button, and the help button, modify the following from `:root` in the DiscordTweaks.css file:
 
